@@ -7,8 +7,8 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v3">docs</a> will be your guide.
-  </p>
+  <div id="map_canvas">
+    <button ion-button (click)="gotoCurrentPosition($event)">ตำแหน่งปัจจุบัน</button>
+    <button ion-button (click)="gotoPositionFromAPI($event)">ดึงข้อมูลจาก API</button>
+  </div>
 </ion-content>
